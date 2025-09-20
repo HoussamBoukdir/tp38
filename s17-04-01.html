@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <input type="color" id="idCo">
+    <button onclick="choseColor()">Appliquer couleur</button>
+
+    <script>
+        document.body.style="background-color:blue";
+        function choseColor(){
+            //document.body.style="background-color:value"
+            //console.log(document.getElementById("idCo").value)
+            let color = document.getElementById("idCo").value;
+            document.body.style=`background-color:${color}`
+        }
+    </script>
+</body>
+</html>
